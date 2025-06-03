@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logo/logo-runico2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Connexion</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bodoni';
+            outline: none;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --orange: #FF8303;
+            --bg: #f0ece3;
+            --bg2: #4C2207;
+            --bg3: #Cc5500;
+            --bg4: #9B430E;
+            --light: #ffffff;
+            --link: #f8d2ac;
+        }
+
+        section {
+            padding: 4rem 3% 1rem;
+            min-height: 100vh;
+        }
+
+        span {
+            color: var(--bg3);
+        }
+
+        body {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--light) 0%, var(--link) 50%, var(--orange) 100%);
+        }
+
+        form {
+            background-color: var(--light);
+            margin-top: 3rem;
+            padding: 2rem 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px var(--bg3);
+            min-width: 300px;
+            max-width: 400px;
+            width: 100%;
+
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--orange);
+            font-size: 2rem;
+        }
+
+        .social-media {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: -10px
+        }
+
+        .social-media a {
+            list-style: none;
+            text-align: center;
+            color: var(--orange);
+            padding: 5px;
+            margin: 0 10px;
+            font-size: 20px;
+            border: 1px solid var(--orange);
+            border-radius: 100%;
+            width: 20px;
+            transition: background 0.2s ease-in-out;
+        }
+
+        .social-media a:hover {
+            background: var(--orange);
+            box-shadow: 0 0 1rem var(--orange);
+            color: var(--light);
+        }
+
+        .choose-email {
+            text-align: center;
+            font-size: 20px;
+            margin: 1rem 0;
+            color: var(black);
+        }
+
+        .input {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .input label {
+            font-size: 1.1rem;
+            color: var(black);
+
+        }
+
+        .input input[type="email"],
+        input[type="password"] {
+            padding: 15px;
+            margin-bottom: 5px;
+            border: none;
+            border-radius: 15px;
+            background: rgb(232, 229, 229);
+            outline: none;
+        }
+
+        .remember-password {
+            display: flex;
+            justify-content: right;
+            font-size: 15px;
+            color: var(--orange);
+            font-weight: 500;
+            margin: -15px 0 15px;
+            margin-top: 10px;
+        }
+
+        .remember-password a {
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        .remember-password a:hover {
+            text-decoration: underline;
+        }
+
+        form button {
+            width: 100%;
+            height: 45px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            color: var(--light);
+            background-color: var(--bg3);
+            outline: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            box-shadow: 0 0 1rem var(--bg3);
+        }
+
+        .login-registe {
+            font-size: 1rem;
+            color: var(black);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .login-registe a {
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--orange);
+        }
+
+        .login-registe a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <h1>Se connecter</h1>
+        <div class="social-media">
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-google'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        </div>
+        <p class="choose-email">ou utiliser mon adresse email</p>
+        <div class="input">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Mot de passe">
+        </div>
+
+        <div class="remember-password">
+            <a href="">Mot de passe oublié ?</a>
+        </div>
+
+        <div align="center">
+            <button class="submit">Connexion</button>
+        </div>
+
+        <div class="login-registe">
+            <p>Vous avez pas un compte ? <a href="inscription.html">s'inscrire</a></p>
+        </div>
+    </form>
+</body>
+
+</html>

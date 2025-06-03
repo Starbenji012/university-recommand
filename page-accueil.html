@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logo/logo-runico2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Accueil</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bodoni';
+            outline: none;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --orange: #FF8303;
+            --bg: #f0ece3;
+            --bg2: #4C2207;
+            --bg3: #Cc5500;
+            --bg4: #9B430E;
+            --light: #fffefe;
+            --link: #f4d7bb;
+        }
+
+        section {
+            padding: 3rem 3% 1rem;
+            min-height: 100vh;
+        }
+
+        span {
+            color: var(--bg3);
+        }
+
+        body {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            background: var(--bg);
+        }
+
+        header {
+            background: var(--bg2);
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        nav button {
+            margin-left: 10px;
+
+        }
+
+        nav a {
+            color: var(--light);
+            font-size: 1.2rem;
+            margin-left: 2rem;
+            transition: .2 ease-in-out;
+            position: relative;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 0%;
+            height: 1px;
+            background: var(--orange);
+            transition: width .2s ease-in-out;
+        }
+
+        nav a:hover {
+            color: var(--orange);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            color: var(--orange);
+            font-weight: 800;
+        }
+
+        #menu-burger {
+            font-size: 3.6rem;
+            cursor: pointer;
+            color: var(--light);
+            display: none;
+        }
+
+        .btn-login-population {
+            display: inline-block;
+            width: 120px;
+            height: 30px;
+            background: transparent;
+            color: var(--light);
+            border: 2px solid var(--light);
+            border-radius: 2rem;
+            font-size: 1rem;
+            transition: .1 ease-in-out;
+            cursor: pointer;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .btn-login-population a {
+            justify-content: space-between;
+            padding-right: 10px;
+            text-align: center;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+
+        .btn-login-population:hover {
+            background: var(--light);
+            color: var(--orange);
+            box-shadow: 0 0 1rem var(--light);
+        }
+
+        .page-accueil {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page-accueil h1 {
+            color: var(--black);
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .page-accueil h1 {
+            font-size: 3.4rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .page-accueil h2 {
+            font-size: 3.4rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .page-accueil-content-a h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .page-accueil-content-a {
+            margin: 5px 5px 5px 5px;
+            padding: 5px;
+            font-size: 1.2rem;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .page-accueil-content-b h2 {
+            text-align: left;
+            font-size: 30px;
+
+        }
+
+        .page-accueil-content-b {
+            margin-top: 30px;
+            padding: 5px;
+            background: var(--link);
+            border-radius: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        .page-accueil-content-b ul {
+            margin: 3px 2px 2px 3px;
+            padding: auto;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--orange);
+        }
+
+        .page-accueil-content-b ul li {
+            margin: 3px 2px 2px 3px;
+            padding: auto;
+            font-size: 1.4rem;
+            list-style: decimal inside;
+
+
+        }
+
+        .page-accueil-content-b p {
+            font-size: 20px;
+            color: black;
+        }
+
+        .page-accueil-content-c {
+            margin: 30px 10px 10px 20px;
+            padding: 5px;
+        }
+
+        .page-accueil-content-c h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .page-accueil-content-c p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+        }
+
+        /* Footer principal */
+        footer {
+            background: var(--bg2);
+            color: var(--light);
+            padding: 40px 0 0 0;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .footer-content1,
+        .footer-content2 {
+            flex: 1 1 300px;
+            margin-bottom: 30px;
+        }
+
+        .footer-content1 h3,
+        .footer-content2 h3 {
+            color: var(--orange);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .footer-content1 p {
+            margin-bottom: 10px;
+        }
+
+        .social-media {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .social-media li a {
+            color: var(--light);
+            font-size: 1.5rem;
+            transition: color 0.2s;
+        }
+
+        .social-media li a:hover {
+            color: var(--orange);
+        }
+
+        .footer-content2 ul.liste {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-content2 ul.liste li {
+            margin-bottom: 8px;
+        }
+
+        .footer-content2 ul.liste li a {
+            color: var(--light);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-content2 ul.liste li a:hover {
+            color: var(--orange);
+            text-decoration: underline;
+        }
+
+        .footer-txt {
+            background: var(--bg3);
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            footer .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 2%;
+            }
+
+            .footer-content1,
+            .footer-content2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-content2 ul.liste {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="icon">
+            <h2 class="logo">RUNECO</h2>
+            <i id="menu-burger" class='bx bx-menu'></i>
+        </div>
+        <nav>
+            <a href="page-accueil.html">Accueil</a>
+            <a href="universite.html">Université</a>
+            <a href="institut.html">Institut</a>
+            <a href="historique.html">Historique</a>
+            <a href="a-propos.html">A propos</a>
+            <a href="connexion.html"> <button class="btn-login-population">Connexion</button></a>
+        </nav>
+    </header>
+
+    <section id="page-accueil" class="page-accueil">
+        <div class="page-accueil-content-a">
+            <h1>Bienvenue sur <span>RUNECO</span></h1>
+
+            <p>
+                Votre guide pour trouve des écoles et des universités adapte en République Démocratique du Congo.
+            </p>
+            <p>
+                Notre objectif principal est de fournir aux étudiants, parents et professionnels des informations
+                fiables et
+                pertinentes sur les établissemnts d'enseignement supérieur du pays.
+            </p>
+            <p>
+                Grâce à une interface conviviale et et des outils de recherche, <span>RUNECO</span> vous permet de
+                découvrir une
+                variété
+                d'options humanitaires et académiques en fonction de vos intérêts, de vos aspirations
+                professionnelles et
+                de
+                votre localisation.
+            </p>
+            <p>
+                Runico s'engage à recueillir les avis et a vos donner les experiences des parents et étudiants afin
+                d'aider
+                chacun à prendre des décisions éclairées pour leur avenir éducatif.
+            </p>
+        </div>
+        <div class="page-accueil-content-b">
+            <h2> Comment sa marche ? </h2>
+            <ul>
+                <li>Crée un compte</li>
+                <p>Inscrivez-vous gratuitement pour accéder à toutes les fonctionnalités.</p>
+                <li>Recherchez</li>
+                <p>Utilisez nos pages pour trouver l'établissement idéal.</p>
+                <li>Comparez</li>
+                <p>Consultez les détails et les avis pour faire le bon choix.</p>
+                <li>Contactez</li>
+                <p>Prenez directement contact avec les écoles ou universités qui vous intéressent.</p>
+            </ul>
+        </div>
+
+        <div class="page-accueil-content-c">
+            <h3>Prêt à Commencer ?</h3>
+            <p>Trouvez votre établissement idéal dès aujourd'hui !</p>
+        </div>
+    </section>
+</body>
+
+
+
+<footer>
+    <div class="container">
+        <div class="footer-content1">
+            <h3 class="section-title">RUNECO</h3>
+            <p>Votre partenaire pour une orientation académique réussie en RDC.</p>
+            <p>Suivez-nous dans nos différentes plateformes. </p>
+            <div class="social-media">
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
+                <li> <a href="#"><i class='bx bxl-twitter'></i></i><a></li>
+            </div>
+        </div>
+        <div class="footer-content2">
+            <h3 class="section-title">Liens Utiles</h3>
+            <ul class="liste">
+                <li><a href="page-accueil.html">Accueil</a></li>
+                <li><a href="universite.html">université</a></li>
+                <li><a href="institut.html">Institut</a></li>
+                <li><a href="historique.html">Historique</a></li>
+                <li><a href="a-propos.html">A propos</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-txt">
+        <p>Copyright &copy; 2025 - RUNECO - Tous droits réservés</p>
+    </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script></script>
+
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logo/logo-runico2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>université</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bodoni';
+            outline: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --orange: #FF8303;
+            --bg: #f0ece3;
+            --bg2: #4C2207;
+            --bg3: #Cc5500;
+            --bg4: #9B430E;
+            --light: #ffffff;
+            --link: #f5c89c;
+        }
+
+        section {
+            padding: 4rem 3% 1rem;
+            min-height: 100vh;
+        }
+
+        span {
+            color: var(--bg3);
+        }
+
+        body {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            background: var(--bg);
+        }
+
+        header {
+            background: var(--bg2);
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        nav li {
+            margin-left: 10px;
+
+        }
+
+        nav a {
+            color: var(--light);
+            font-size: 1.2rem;
+            margin-left: 2rem;
+            transition: .2 ease-in-out;
+            position: relative;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 0%;
+            height: 1px;
+            background: var(--orange);
+            transition: width .2s ease-in-out;
+        }
+
+        nav a:hover {
+            color: var(--orange);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            color: var(--orange);
+            font-weight: 800;
+        }
+
+        #menu-burger {
+            font-size: 3.6rem;
+            cursor: pointer;
+            color: var(--link);
+            display: none;
+        }
+
+        .btn-login-population {
+            display: inline-block;
+            width: 120px;
+            height: 30px;
+            background: transparent;
+            color: var(--light);
+            border: 2px solid var(--light);
+            border-radius: 2rem;
+            font-size: 1rem;
+            transition: .1 ease-in-out;
+            cursor: pointer;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .btn-login-population:hover {
+            background: var(--light);
+            color: var(--orange);
+            box-shadow: 0 0 1rem var(--light);
+        }
+
+        .universite {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .universite-content {
+            display: relative;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: black;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+
+        .universite-content p {
+            margin: 30px 1%;
+            font-size: 20px;
+        }
+
+        .universite-content h2 {
+            font-size: 2rem;
+            color: var(--bg3);
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .universite-content a {
+            text-decoration: none;
+            color: var(--link);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .universite-content-a p {
+            text-align: center;
+        }
+
+        .universite-carousel-horizontal {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 100%;
+            margin: 20px 0;
+            justify-content: center;
+        }
+
+        .carousel-track-horizontal {
+            display: flex;
+            flex-direction: row;
+            overflow-x: hidden;
+            gap: 10px;
+            max-width: 600px;
+            min-height: 50px;
+            padding: 10px 0;
+            scroll-behavior: smooth;
+        }
+
+        .carousel-track-horizontal button {
+            min-width: 120px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 1px solid var(--bg3);
+            background: var(--light);
+            color: var(--bg3);
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .carousel-track-horizontal button a {
+            color: var(--bg3);
+            text-decoration: none;
+        }
+
+        .carousel-track-horizontal button:hover,
+        .carousel-track-horizontal button:focus {
+            background: var(--bg3);
+            color: var(--light);
+            box-shadow: 0 0 1rem var(--bg3);
+        }
+
+        .carousel-track-horizontal button:hover a,
+        .carousel-track-horizontal button:focus a {
+            color: var(--light);
+        }
+
+        .carousel-arrow-horizontal {
+            background: var(--bg3);
+            color: var(--light);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-arrow-horizontal:active {
+            background: var(--orange);
+        }
+
+        /* Footer principal */
+        footer {
+            background: var(--bg2);
+            color: var(--light);
+            padding: 40px 0 0 0;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .footer-content1,
+        .footer-content2 {
+            flex: 1 1 300px;
+            margin-bottom: 30px;
+        }
+
+        .footer-content1 h3,
+        .footer-content2 h3 {
+            color: var(--orange);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .footer-content1 p {
+            margin-bottom: 10px;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin-top: 10px;
+            list-style: none;
+
+        }
+
+        .social-media li a {
+            color: var(--light);
+            font-size: 1.6rem;
+            transition: color 0.2s,
+        }
+
+        .social-media li a:hover {
+            color: var(--orange);
+        }
+
+        .footer-content2 ul.liste {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-content2 ul.liste li {
+            margin-bottom: 8px;
+        }
+
+        .footer-content2 ul.liste li a {
+            color: var(--light);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-content2 ul.liste li a:hover {
+            color: var(--orange);
+            text-decoration: underline;
+        }
+
+        .footer-txt {
+            background: var(--bg3);
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            footer .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 2%;
+            }
+
+            .footer-content1,
+            .footer-content2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-content2 ul.liste {
+                display: inline-block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="icon">
+            <h2 class="logo">RUNECO</h2>
+            <i id="menu-burger" class='bx bx-menu'></i>
+        </div>
+        <nav>
+
+            <a href="page-accueil.html">Accueil</a>
+            <a href="universite.html">Université</a>
+            <a href="institut.html">Institut</a>
+            <a href="historique.html">Historique</a>
+            <a href="a-propos.html">A propos</a>
+            <a href="connexion.html"> <button class="btn-login-population">Connexion</button></a>
+            </ul>
+        </nav>
+    </header>
+    <section id="universite" class="universite">
+        <div class="universite-content">
+            <h1 class="section-title">Choisissez votre <span>Université</span></h1>
+            <p></p>
+            <p>Bienvenue sur la page Université, ici nous vous offrons la possibilité de choisir l'université qui vous
+                convient le mieux en fonction de
+                province présent.
+            </p>
+
+            <div class="univeriste-content-a">
+                <h2>Université Public</h2>
+
+                <p>Ici nous vous présentons les universités public de la RDC </p>
+                <div class="universite-carousel-horizontal">
+                    <button class="carousel-arrow-horizontal" id="leftBtn1"><i class='bx bx-chevron-left'></i></button>
+                    <div class="carousel-track-horizontal" id="carouselTrack1">
+                        <button>
+                            <a href="kinshasa.html">Kinshasa</a>
+                        </button>
+                        <button>
+                            <a href="kongo-central.html">Kongo Central</a></button>
+                        <button>
+                            <a href="">Kwilu</a>
+                        </button>
+                        <button><a href="">Mongala</a></button>
+                        <button><a href="">Nord-Ubangi</a></button>
+                        <button><a href="">Sud-Ubangi</a></button>
+                        <button><a href="">Tshopo</a></button>
+                        <button><a href="">Ituri</a></button>
+                        <button><a href="">Nord-Kivu</a></button>
+                        <button><a href="">Sud-Kivu</a></button>
+                        <button><a href="">Haut-Lomami</a></button>
+                        <button><a href="">Haut-Katanga</a></button>
+                        <button><a href="">Lualabe</a></button>
+                        <button><a href="">Kasai-Oriental</a></button>
+                        <button><a href="">Lomami</a></button>
+                        <button><a href="">Sankuru</a></button>
+                    </div>
+                    <button class="carousel-arrow-horizontal" id="rightBtn1"><i
+                            class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+
+            <div class="universite-content-b">
+                <h2>Université Privée</h2>
+                <p>ici nous vous presentons les universités Privées de la RDC</p>
+                <div class="universite-carousel-horizontal">
+                    <button class="carousel-arrow-horizontal" id="leftBtn2"><i class='bx bx-chevron-left'></i></button>
+                    <div class="carousel-track-horizontal" id="carouselTrack2">
+                        <button><a href="">Kinshasa</a></button>
+                        <button><a href="">Kongo Central</a></button>
+                        <button><a href="">Kwilu</a></button>
+                        <button><a href="">Mongala</a></button>
+                        <button><a href="">Nord-Ubangi</a></button>
+                        <button><a href="">Sud-Ubangi</a></button>
+                        <button><a href="">Tshopo</a></button>
+                        <button><a href="">Ituri</a></button>
+                        <button><a href="">Nord-Kivu</a></button>
+                        <button><a href="">Sud-Kivu</a></button>
+                        <button><a href="">Haut-Lomami</a></button>
+                        <button><a href="">Haut-Katanga</a></button>
+                        <button><a href="">Lualabe</a></button>
+                        <button><a href="">Kasai-Oriental</a></button>
+                        <button><a href="">Lomami</a></button>
+                        <button><a href="">Sankuru</a></button>
+                    </div>
+                    <button class="carousel-arrow-horizontal" id="rightBtn2"><i
+                            class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content1">
+                <h3>RUNECO</h3>
+                <p>Votre paternaire pour une orientation académique réussie en RDC.</p>
+                <p>Suivez-nous dans nos différentes plateformes. </p>
+                <ul class="social-media">
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3>liens Utiles</h3>
+                <ul class="liste">
+                    <li><a href="page-accueil.html">Accueil</a></li>
+                    <li><a href="universite.html">Université</a></li>
+                    <li><a href="institut.html">Institut</a></li>
+                    <li><a href="historique.html">Historique</a></li>
+                    <li><a href="a-propos.html">A propos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-txt">
+            <p>Copyright &copy; 2025 - RUNECO - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+<script>
+    // Carrousel 1
+    (function () {
+        const track = document.getElementById('carouselTrack1');
+        document.getElementById('leftBtn1').onclick = () => {
+            track.scrollBy({ left: -250, behavior: 'smooth' });
+        };
+        document.getElementById('rightBtn1').onclick = () => {
+            track.scrollBy({ left: 250, behavior: 'smooth' });
+        };
+    })();
+    // Carrousel 2
+    (function () {
+        const track = document.getElementById('carouselTrack2');
+        document.getElementById('leftBtn2').onclick = () => {
+            track.scrollBy({ left: -250, behavior: 'smooth' });
+        };
+        document.getElementById('rightBtn2').onclick = () => {
+            track.scrollBy({ left: 250, behavior: 'smooth' });
+        };
+    })();
+</script>
+
+</html>
