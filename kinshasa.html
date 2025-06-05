@@ -112,6 +112,22 @@
             box-shadow: 0 0 15px var(--link)
         }
 
+        .container-prive {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px 25px;
+            background: #fff;
+            border: 1px solid var(--orange);
+            border-radius: 18px;
+            box-shadow: 0 0 15px var(--link)
+        }
+
+        .section-titre {
+            margin-bottom: 3rem;
+            text-align: center;
+            font-size: 3rem;
+        }
+
         .kinshasa {
             position: relative;
             justify-content: center;
@@ -178,13 +194,61 @@
             margin-bottom: 8px;
         }
 
+
+        .kinshasas-prive {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .kinshasa-prive-contenu {
+            background: var(--link);
+            border: 1px solid var(--bg2);
+            border-radius: 12px;
+            padding: 20px;
+            width: 260px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .kinshasa-prive-contenu:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
+        }
+
+        .kinshasa-prive-contenu img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin: 12px 0;
+        }
+
+
+        .kinshasa-prive-contenu .description {
+            font-size: 1rem;
+            color: var(black);
+            margin-bottom: 8px;
+        }
+
+        .kinshasa-prive-contenu .titre {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--orange);
+            margin-bottom: 8px;
+        }
+
         /* Footer principal */
         footer {
             background: var(--bg2);
             color: var(--light);
             padding: 40px 0 0 0;
             margin-top: 40px;
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
 
         footer .container-footer {
@@ -213,24 +277,7 @@
             margin-bottom: 10px;
         }
 
-        .social-media {
-            display: flex;
-            gap: 15px;
-            padding: 0;
-            margin-top: 10px;
-            list-style: none;
 
-        }
-
-        .social-media li a {
-            color: var(--light);
-            font-size: 1.6rem;
-            transition: color 0.2s,
-        }
-
-        .social-media li a:hover {
-            color: var(--orange);
-        }
 
         .footer-content2 ul.liste {
             list-style: none;
@@ -290,7 +337,7 @@
             <i id="menu-burger" class='bx bx-menu'></i>
         </div>
         <nav>
-            <a href="page-accueil.html">Accueil</a>
+            <a href="index.html">Accueil</a>
             <a href="universite.html">Université</a>
             <a href="institut.html">Institut</a>
             <a href="a-propos.html">A propos</a>
@@ -303,6 +350,7 @@
                 trouve.</p>
 
             <div class="container">
+                <div class="section-titre">PUBLIC</div>
                 <div class="kinshasas">
                     <div class="kinshasa-liste">
                         <div class="kinshasa-contenu">
@@ -312,6 +360,24 @@
                         </div>
                     </div>
                     <div class="kinshasa-contenu">
+                        <h2 class="titre">UPN</h2>
+                        <P class="description">Bienvenue à l'Université Pédagogique Nationale</P>
+                        <img src="../img-universite/logo-upn.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-prive">
+                <div class="section-titre">PRIVE</div>
+                <div class="kinshasas-prive">
+                    <div class="kinshasa-prive-liste">
+                        <div class="kinshasa-prive-contenu">
+                            <h2 class="titre">UNIKIN</h2>
+                            <P class="description">Bienvenue à l'Université de Kinshasa</P>
+                            <img src="../img-universite/logo-UNIKIN.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="kinshasa-prive-contenu">
                         <h2 class="titre">UPN</h2>
                         <P class="description">Bienvenue à l'Université Pédagogique Nationale</P>
                         <img src="../img-universite/logo-upn.png" alt="">
@@ -331,18 +397,13 @@
             <div class="footer-content1">
                 <h3>Runeco</h3>
                 <p>Votre paternaire pour une orientation académique réussie en RDC.</p>
-                <p>Suivez-nous dans nos différentes plateformes. </p>
-                <ul class="social-media">
-                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
-                    <li> <a href="#"><i class='bx bxl-twitter'></i></i></a></li>
 
-                </ul>
+
             </div>
             <div class="footer-content2">
                 <h3>Liens Utiles</h3>
                 <ul class="liste">
-                    <li><a href="page Accueil.html">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="universite.html">Université</a></li>
                     <li><a href="institut.html">Institut</a></li>
                     <li><a href="a propos.html">A propos</a></li>

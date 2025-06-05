@@ -216,7 +216,7 @@
             color: var(--light);
             padding: 40px 0 0 0;
             margin-top: 40px;
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
 
         footer .container {
@@ -245,24 +245,6 @@
             margin-bottom: 10px;
         }
 
-        .social-media {
-            display: flex;
-            gap: 15px;
-            padding: 0;
-            margin-top: 10px;
-            list-style: none;
-
-        }
-
-        .social-media li a {
-            color: var(--light);
-            font-size: 1.6rem;
-            transition: color 0.2s,
-        }
-
-        .social-media li a:hover {
-            color: var(--orange);
-        }
 
         .footer-content2 ul.liste {
             list-style: none;
@@ -322,7 +304,7 @@
             <i id="menu-burger" class='bx bx-menu'></i>
         </div>
         <nav>
-            <a href="page-accueil.html">Accueil</a>
+            <a href="index.html">Accueil</a>
             <a href="universite.html">Université</a>
             <a href="institut.html">Institut</a>
             <a href="a-propos.html">A propos</a>
@@ -369,33 +351,7 @@
                 </div>
             </div>
 
-            <div class="institut-content-b">
-                <h2>Institut Privée</h2>
-                <p>ici nous vous présentons les instituts Privées de la RDC</p>
-                <div class="institut-carousel-horizontal">
-                    <button class="carousel-arrow-horizontal" id="leftBtn2"><i class='bx bx-chevron-left'></i></button>
-                    <div class="carousel-track-horizontal" id="carouselTrack2">
-                        <button><a href="">Kinshasa</a></button>
-                        <button><a href="">Kongo Central</a></button>
-                        <button><a href="">Kwilu</a></button>
-                        <button><a href="">Mongala</a></button>
-                        <button><a href="">Nord-Ubangi</a></button>
-                        <button><a href="">Sud-Ubangi</a></button>
-                        <button><a href="">Tshopo</a></button>
-                        <button><a href="">Ituri</a></button>
-                        <button><a href="">Nord-Kivu</a></button>
-                        <button><a href="">Sud-Kivu</a></button>
-                        <button><a href="">Haut-Lomami</a></button>
-                        <button><a href="">Haut-Katanga</a></button>
-                        <button><a href="">Lualabe</a></button>
-                        <button><a href="">Kasai-Oriental</a></button>
-                        <button><a href="">Lomami</a></button>
-                        <button><a href="">Sankuru</a></button>
-                    </div>
-                    <button class="carousel-arrow-horizontal" id="rightBtn2"><i
-                            class='bx bx-chevron-right'></i></button>
-                </div>
-            </div>
+
 
         </div>
     </section>
@@ -407,17 +363,13 @@
             <div class="footer-content1">
                 <h3>RUNECO</h3>
                 <p>Votre paternaire pour une orientation académique réussie en RDC.</p>
-                <p>Suivez-nous dans nos différentes plateformes. </p>
-                <ul class="social-media">
-                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
-                    <li> <a href="#"><i class='bx bxl-twitter'></i></i></a></li>
-                </ul>
+
+
             </div>
             <div class="footer-content2">
                 <h3>Liens Utiles</h3>
                 <ul class="liste">
-                    <li><a href="page-accueil.html">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="universite.html">Universite</a></li>
                     <li><a href="institut.html">Institut</a></li>
                     <li><a href="a-propos.html">A propos</a></li>
@@ -442,16 +394,7 @@
                 track.scrollBy({ left: 250, behavior: 'smooth' });
             };
         })();
-        // Carrousel 2
-        (function () {
-            const track = document.getElementById('carouselTrack2');
-            document.getElementById('leftBtn2').onclick = () => {
-                track.scrollBy({ left: -250, behavior: 'smooth' });
-            };
-            document.getElementById('rightBtn2').onclick = () => {
-                track.scrollBy({ left: 250, behavior: 'smooth' });
-            };
-        })();
+
 
     </script>
 

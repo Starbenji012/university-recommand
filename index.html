@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../logo/logo-runico2.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>A propos</title>
+    <title>Accueil</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
@@ -27,8 +27,8 @@
             --bg2: #4C2207;
             --bg3: #Cc5500;
             --bg4: #9B430E;
-            --light: #ffffff;
-            --link: #f5c89c;
+            --light: #fffefe;
+            --link: #f4d7bb;
         }
 
         section {
@@ -53,9 +53,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-
         }
-
 
 
         nav button {
@@ -102,90 +100,96 @@
         }
 
 
-        .a-propos {
+        .page-accueil {
             position: relative;
             justify-content: center;
             align-items: center;
         }
 
-        .a-propos h1 {
-            font-size: 3.4rem;
+        .page-accueil h1 {
+            color: var(--black);
+            font-size: 4rem;
             font-weight: 600;
             line-height: 1.3;
             text-align: center;
-            margin: 20px 0;
-            color: var(--black);
-
+            margin-top: 20px;
         }
 
-        .a-propos h2 {
+        .page-accueil h1 {
             font-size: 3.4rem;
             font-weight: 600;
             line-height: 1.3;
-            text-align: center;
-            margin: 20px 0;
-            color: var(--black);
         }
 
-
-        .a-propos-content-a h1 {
-            text-align: center;
-            font-size: 40px;
+        .page-accueil h2 {
+            font-size: 3.4rem;
+            font-weight: 600;
+            line-height: 1.3;
         }
 
-        .a-propos-content-b h2 {
+        .page-accueil-content-a h1 {
             text-align: center;
-            font-size: 35px;
+            font-size: 50px;
         }
 
-
-        .a-propos-content-d h2 {
+        .page-accueil-content-a {
+            margin: 5px 5px 5px 5px;
+            padding: 5px;
+            font-size: 1.2rem;
+            line-height: 1.2;
             text-align: center;
+        }
+
+        .page-accueil-content-b h2 {
+            text-align: left;
             font-size: 30px;
+
         }
 
-        .a-propos-content-a {
-            margin: 5px 5px 5px 5px;
+        .page-accueil-content-b {
+            margin-top: 30px;
             padding: 5px;
-            font-size: 1.2rem;
-            line-height: 1.2;
-            text-align: center;
-        }
-
-        .a-propos-content-b {
-            margin: 5px 5px 5px 5px;
-            padding: 5px;
-            font-size: 1.2rem;
-            line-height: 1.2;
-            text-align: center;
-        }
-
-        .a-propos-content-d {
-            margin: 30px;
-            padding: 10px;
+            background: var(--link);
             border-radius: 1rem;
-            line-height: 1.2;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             line-height: 1.2;
             text-align: left;
-            background: var(--link);
         }
 
-        .a-propos-content-d ul {
-            margin: 3px 2px;
-            padding: 10px;
+        .page-accueil-content-b ul {
+            margin: 3px 2px 2px 3px;
+            padding: auto;
+            font-size: 1.3rem;
             font-weight: 500;
             color: var(--orange);
         }
 
-        .a-propos-content-d ul li {
+        .page-accueil-content-b ul li {
             margin: 3px 2px 2px 3px;
-            padding: 5px;
+            padding: auto;
             font-size: 1.4rem;
             list-style: decimal inside;
+
+
         }
 
-        .a-propos-content-d p {
+        .page-accueil-content-b p {
+            font-size: 20px;
+            color: black;
+        }
+
+        .page-accueil-content-c {
+            margin: 30px 10px 10px 20px;
+            padding: 5px;
+        }
+
+        .page-accueil-content-c h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .page-accueil-content-c p {
+            text-align: center;
             font-size: 20px;
             color: black;
         }
@@ -224,7 +228,6 @@
         .footer-content1 p {
             margin-bottom: 10px;
         }
-
 
 
         .footer-content2 ul.liste {
@@ -278,9 +281,9 @@
     </style>
 </head>
 
-
 <body>
     <header>
+
         <div class="icon">
             <h2 class="logo">RUNECO</h2>
             <i id="menu-burger" class='bx bx-menu'></i>
@@ -292,69 +295,76 @@
             <a href="a-propos.html">A propos</a>
         </nav>
     </header>
-    <section id="a-propos" class="a-propos">
-        <div class="a-propos-content-a">
-            <h1 class="section-title">À Propos de <span>RUNECO</span></h1>
 
-            <p><span>RUNECO</span> est une plateforme de référence pour la recommandation des universités et instituts
-                en République
-                Démocratique du Congo (RDC). Notre misssion est de simplifier et d'optimiser le processus de choix
-                d'établissements éducatifs pour les étudiants, les professionnels de l'éducation.
-            </p>
-        </div>
-        <div class="a-propos-content-b">
-            <h2>Notre vision</h2>
+    <section id="page-accueil" class="page-accueil">
+        <div class="page-accueil-content-a">
+            <h1>Bienvenue sur <span>RUNECO</span></h1>
+
             <p>
-                <span>RUNECO</span> aspire à devenir la plateforme incontournable pour l'orientation académique en RDC.
-                Nous
-                croyons
-                en une
-                éducation de qualité et adaptée aux besoins de chaque individu. Notre objectif est de
-                fournir des
-                informations fiables pour aider les utilisateurs à prendre des décisions éclairées
-                concernant
-                leur parcours éducatif.
+                Votre guide pour trouve des écoles et des universités adapte en République Démocratique du Congo.
+            </p>
+            <p>
+                Notre objectif principal est de fournir aux étudiants, parents et professionnels des informations
+                fiables et
+                pertinentes sur les établissemnts d'enseignement supérieur du pays.
+            </p>
+            <p>
+                Grâce à une interface conviviale <span>RUNECO</span> vous permet de
+                découvrir une
+                variété
+                d'établissements, de comparer leurs programmes selon votre choix
+            </p>
+            <p>
+                Runico s'engage à recueillir les avis et a vos donner les experiences étudiants afin
+                d'aider
+                chacun à prendre des décisions éclairées pour leur avenir éducatif.
             </p>
         </div>
-
-        <div class="a-propos-content-d">
-            <h2>Pourquoi choisir <span>RUNECO </span> ?</h2>
+        <div class="page-accueil-content-b">
+            <h2> Comment sa marche ? </h2>
             <ul>
-                <li>Fiabilité</li>
-                <p>Nos données sont verifiées et mises à jour régulièrement.</p>
-                <li>Simplicité</li>
-                <p>Une expérience utilisateur optimale.</p>
-                <li>Communauté</li>
-                <p>Une plateforme collaborative où les utilisateurs partagent leurs expériences et conseils.</p>
-                <li>Engagement</li>
-                <p>Nous nous engageons à promouvoir l'excellence académique et l'accès à l'éducation pour
-                    tous.</p>
+                <li>Recherchez</li>
+                <p>Utilisez nos pages pour trouver l'établissement idéal.</p>
+                <li>Comparez</li>
+                <p>Consultez les détails et les avis pour faire le bon choix.</p>
+                <li>Contactez</li>
+                <p>Prenez directement contact avec les les universités ou les instituts qui vous intéressent.</p>
             </ul>
         </div>
+
+        <div class="page-accueil-content-c">
+            <h3>Prêt à Commencer ?</h3>
+            <p>Trouvez votre établissement idéal dès aujourd'hui !</p>
+        </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content1">
-                <h3>RUNECO</h3>
-                <p>Votre paternaire pour une orientation académique réussie en RDC.</p>
-            </div>
-            <div class="footer-content2">
-                <h3>Liens Utiles</h3>
-                <ul class="liste">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="universite.html">Universite</a></li>
-                    <li><a href="institut.html">Institut</a></li>
-                    <li><a href="a-propos.html">A propos</a></li>
-                </ul>
-
-            </div>
-        </div>
-        <div class="footer-txt">
-            <p>Copyright &copy; 2025 - RUNECO - Tous droits réservés</p>
-        </div>
-    </footer>
 </body>
+
+
+
+<footer>
+    <div class="container">
+        <div class="footer-content1">
+            <h3 class="section-title">RUNECO</h3>
+            <p>Votre partenaire pour une orientation académique réussie en RDC.</p>
+
+
+        </div>
+        <div class="footer-content2">
+            <h3 class="section-title">Liens Utiles</h3>
+            <ul class="liste">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="universite.html">université</a></li>
+                <li><a href="institut.html">Institut</a></li>
+                <li><a href="a-propos.html">A propos</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-txt">
+        <p>Copyright &copy; 2025 - RUNECO - Tous droits réservés</p>
+    </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script></script>
 
 </html>
