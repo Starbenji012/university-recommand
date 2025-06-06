@@ -1,352 +1,352 @@
 <!DOCTYPE html>
-<html lang="fr>
+<html lang="fr">
 
 <head>
-    <meta charset=" UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="../logo/logo-runico2.png">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<title>SUD-KIVU</title>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logo/logo-runico2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>SANKURU</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Bodoni';
-        outline: none;
-        text-decoration: none;
-        list-style: none;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bodoni';
+            outline: none;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-    :root {
-        --orange: #FF8303;
-        --bg: #f0ece3;
-        --bg2: #4C2207;
-        --bg3: #Cc5500;
-        --bg4: #9B430E;
-        --light: #f1f1f1;
-        --link: #f5c89c;
-    }
+        :root {
+            --orange: #FF8303;
+            --bg: #f0ece3;
+            --bg2: #4C2207;
+            --bg3: #Cc5500;
+            --bg4: #9B430E;
+            --light: #f1f1f1;
+            --link: #f5c89c;
+        }
 
-    section {
-        padding: 4rem 3% 1rem;
-        min-height: 100vh;
-    }
+        section {
+            padding: 4rem 3% 1rem;
+            min-height: 100vh;
+        }
 
-    span {
-        color: var(--bg3);
-    }
+        span {
+            color: var(--bg3);
+        }
 
-    body {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(135deg, var(--light) 0%, var(--link) 100%);
-    }
+        body {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--light) 0%, var(--link) 100%);
+        }
 
-    header {
-        background: var(--bg2);
-        padding: 10px 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        header {
+            background: var(--bg2);
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-    }
-
-
-
-    nav button {
-        margin-left: 30px;
-
-    }
-
-    nav a {
-        color: var(--light);
-        font-size: 1.2rem;
-        margin-left: 2rem;
-        transition: .2 ease-in-out;
-        position: relative;
-    }
-
-    nav a::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        width: 0%;
-        height: 1px;
-        background: var(--orange);
-        transition: width .2s ease-in-out;
-    }
-
-    nav a:hover {
-        color: var(--orange);
-    }
-
-    .logo {
-        font-size: 2.5rem;
-        color: var(--orange);
-        font-weight: 800;
-    }
-
-    #menu-burger {
-        font-size: 3.6rem;
-        cursor: pointer;
-        color: var(--light);
-        display: none;
-    }
+        }
 
 
 
-    .container {
-        max-width: 900px;
-        margin: 30px auto;
-        padding: 30px 25px;
-        background: #fff;
-        border: 1px solid var(--orange);
-        border-radius: 18px;
-        box-shadow: 0 0 15px var(--link)
-    }
+        nav button {
+            margin-left: 30px;
 
-    .container-prive {
-        max-width: 900px;
-        margin: 30px auto;
-        padding: 30px 25px;
-        background: #fff;
-        border: 1px solid var(--orange);
-        border-radius: 18px;
-        box-shadow: 0 0 15px var(--link)
-    }
+        }
 
-    .section-titre {
-        margin-bottom: 3rem;
-        text-align: center;
-        font-size: 3rem;
-    }
+        nav a {
+            color: var(--light);
+            font-size: 1.2rem;
+            margin-left: 2rem;
+            transition: .2 ease-in-out;
+            position: relative;
+        }
 
-    .sud-kivu {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-    }
+        nav a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 0%;
+            height: 1px;
+            background: var(--orange);
+            transition: width .2s ease-in-out;
+        }
 
-    .sud-kivu h1 {
-        font-size: 3.4rem;
-        font-weight: 600;
-        line-height: 1.3;
-        text-align: center;
-        margin: 20px 0;
-    }
+        nav a:hover {
+            color: var(--orange);
+        }
 
-    .sud-kivu-content {
-        text-align: center;
-        font-size: 30px;
-    }
+        .logo {
+            font-size: 2.5rem;
+            color: var(--orange);
+            font-weight: 800;
+        }
 
-    .sud-kivus {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .sud-kivu-contenu {
-        background: var(--link);
-        border: 1px solid var(--bg2);
-        border-radius: 12px;
-        padding: 20px;
-        width: 260px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: transform 0.2s;
-    }
-
-    .sud-kivu-contenu:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
-    }
-
-    .sud-kivu-contenu img {
-        width: 120px;
-        height: 120px;
-        object-fit: contain;
-        margin: 12px 0;
-    }
-
-
-    .sud-kivu-contenu .description {
-        font-size: 1rem;
-        color: var(black);
-        margin-bottom: 8px;
-    }
-
-    .sud-kivu-contenu .titre {
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: var(--orange);
-        margin-bottom: 8px;
-    }
-
-    .sud-kivu-prive {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sud-kivu-prive h1 {
-        font-size: 3.4rem;
-        font-weight: 600;
-        line-height: 1.3;
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .sud-kivu-prive-content {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .sud-kivus-prive {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .sud-kivu-prive-contenu {
-        background: var(--link);
-        border: 1px solid var(--bg2);
-        border-radius: 12px;
-        padding: 20px;
-        width: 260px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: transform 0.2s;
-    }
-
-    .sud-kivu-prive-contenu:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
-    }
-
-    .sud-kivu-prive-contenu img {
-        width: 120px;
-        height: 120px;
-        object-fit: contain;
-        margin: 12px 0;
-    }
-
-
-    .sud-kivu-prive-contenu .description {
-        font-size: 1rem;
-        color: var(black);
-        margin-bottom: 8px;
-    }
-
-    .sud-kivu-prive-contenu .titre {
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: var(--orange);
-        margin-bottom: 8px;
-    }
-
-    /* Footer principal */
-    footer {
-        background: var(--bg2);
-        color: var(--light);
-        padding: 40px 0 0 0;
-        margin-top: 40px;
-        font-size: 1.3rem;
-    }
-
-    footer .container-footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 5%;
-    }
-
-    .footer-content1,
-    .footer-content2 {
-        flex: 1 1 300px;
-        margin-bottom: 30px;
-    }
-
-    .footer-content1 h3,
-    .footer-content2 h3 {
-        color: var(--orange);
-        margin-bottom: 15px;
-        font-size: 1.5rem;
-    }
-
-    .footer-content1 p {
-        margin-bottom: 10px;
-    }
+        #menu-burger {
+            font-size: 3.6rem;
+            cursor: pointer;
+            color: var(--light);
+            display: none;
+        }
 
 
 
-    .footer-content2 ul.liste {
-        list-style: none;
-        padding: 0;
-    }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px 25px;
+            background: #fff;
+            border: 1px solid var(--orange);
+            border-radius: 18px;
+            box-shadow: 0 0 15px var(--link)
+        }
 
-    .footer-content2 ul.liste li {
-        margin-bottom: 8px;
-    }
+        .container-prive {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px 25px;
+            background: #fff;
+            border: 1px solid var(--orange);
+            border-radius: 18px;
+            box-shadow: 0 0 15px var(--link)
+        }
 
-    .footer-content2 ul.liste li a {
-        color: var(--light);
-        text-decoration: none;
-        transition: color 0.2s;
-    }
+        .section-titre {
+            margin-bottom: 3rem;
+            text-align: center;
+            font-size: 3rem;
+        }
 
-    .footer-content2 ul.liste li a:hover {
-        color: var(--orange);
-        text-decoration: underline;
-    }
+        .sankuru {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .footer-txt {
-        background: var(--bg3);
-        color: #fff;
-        text-align: center;
-        padding: 15px 0;
-        margin-top: 20px;
-        font-size: 1rem;
-        letter-spacing: 1px;
-    }
+        .sankuru h1 {
+            font-size: 3.4rem;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: center;
+            margin: 20px 0;
+        }
 
-    /* Responsive */
-    @media (max-width: 800px) {
-        footer .container {
+        .sankuru-content {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .sankurus {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .sankuru-contenu {
+            background: var(--link);
+            border: 1px solid var(--bg2);
+            border-radius: 12px;
+            padding: 20px;
+            width: 260px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0 2%;
+            transition: transform 0.2s;
+        }
+
+        .sankuru-contenu:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
+        }
+
+        .sankuru-contenu img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin: 12px 0;
+        }
+
+
+        .sankuru-contenu .description {
+            font-size: 1rem;
+            color: var(black);
+            margin-bottom: 8px;
+        }
+
+        .sankuru-contenu .titre {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--orange);
+            margin-bottom: 8px;
+        }
+
+        .sankuru-prive {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sankuru-prive h1 {
+            font-size: 3.4rem;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .sankuru-prive-content {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .sankurus-prive {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .sankuru-prive-contenu {
+            background: var(--link);
+            border: 1px solid var(--bg2);
+            border-radius: 12px;
+            padding: 20px;
+            width: 260px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .sankuru-prive-contenu:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
+        }
+
+        .sankuru-prive-contenu img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin: 12px 0;
+        }
+
+
+        .sankuru-prive-contenu .description {
+            font-size: 1rem;
+            color: var(black);
+            margin-bottom: 8px;
+        }
+
+        .sankuru-prive-contenu .titre {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--orange);
+            margin-bottom: 8px;
+        }
+
+        /* Footer principal */
+        footer {
+            background: var(--bg2);
+            color: var(--light);
+            padding: 40px 0 0 0;
+            margin-top: 40px;
+            font-size: 1.3rem;
+        }
+
+        footer .container-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5%;
         }
 
         .footer-content1,
         .footer-content2 {
-            width: 100%;
-            text-align: center;
+            flex: 1 1 300px;
+            margin-bottom: 30px;
         }
 
-        .footer-content2 ul.liste {
-            display: inline-block;
+        .footer-content1 h3,
+        .footer-content2 h3 {
+            color: var(--orange);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
         }
-    }
-</style>
+
+        .footer-content1 p {
+            margin-bottom: 10px;
+        }
+
+
+
+        .footer-content2 ul.liste {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-content2 ul.liste li {
+            margin-bottom: 8px;
+        }
+
+        .footer-content2 ul.liste li a {
+            color: var(--light);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-content2 ul.liste li a:hover {
+            color: var(--orange);
+            text-decoration: underline;
+        }
+
+        .footer-txt {
+            background: var(--bg3);
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            footer .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 2%;
+            }
+
+            .footer-content1,
+            .footer-content2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-content2 ul.liste {
+                display: inline-block;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -363,33 +363,45 @@
         </nav>
     </header>
 
-    <section id="sud-kivu" class="sud-kivu">
-        <div class="sud-kivu-content">
-            <h1><span>SUD-KIVU</span></h1>
-            <p>Bienvenue dans la province de <span>Sud-Kivu</span> est nous vous présentons les universités
+    <section id="sankuru" class="sankuru">
+        <div class="sankuru-content">
+            <h1><span>SANKURU</span></h1>
+            <p>Bienvenue dans la province de <span>Sankuru</span> est nous vous présentons les universités
                 qui si
                 trouve.</p>
 
             <div class="container">
                 <div class="section-titre">PUBLIC</div>
-                <div class="sud-kivus">
-                    <div class="sud-kivu-liste">
-                        <div class="sud-kivu-contenu">
-                            <h2 class="titre">UA/BUKAVU</h2>
-                            <P class="description">Bienvenue à l'Université Anglicane de Bukavu </P>
+                <div class="sankurus">
+                    <div class="sankuru-liste">
+                        <div class="sankuru-contenu">
+                            <h2 class="titre">UNILOD</h2>
+                            <P class="description">Bienvenue à l'Université de Lodja </P>
                             <img src="../img-universite/logo-ukv (1).jpg" alt="">
                         </div>
                     </div>
 
-                    <div class="sud-kivu-contenu">
-                        <h2 class="titre">UNIC - LWIRO</h2>
-                        <P class="description">Bienvenue à l'Université Cinquantenaire de Lwiro</P>
+                    <div class="sankuru-contenu">
+                        <h2 class="titre">UNILUS</h2>
+                        <P class="description">Bienvenue à l'Université de Lusambo</P>
                         <img src="../img-universite/logo-ukv (1).jpg" alt="">
                     </div>
 
-                    <div class="sud-kivu-contenu">
-                        <h2 class="titre">UOB</h2>
-                        <P class="description">Bienvenue à l'Université Officielle de Bukavu</P>
+                    <div class="sankuru-contenu">
+                        <h2 class="titre">UNITSHU</h2>
+                        <P class="description">Bienvenue à l'Université Notre Dame de Tshumbe</P>
+                        <img src="../img-universite/logo-ukv (1).jpg" alt="">
+                    </div>
+
+                    <div class="sankuru-contenu">
+                        <h2 class="titre">UPEL-WEMBO-NYAMBA</h2>
+                        <P class="description">Bienvenue à l'Université Patrice Emery Lumumba de Wembo-Nyama</P>
+                        <img src="../img-universite/logo-ukv (1).jpg" alt="">
+                    </div>
+
+                    <div class="sankuru-contenu">
+                        <h2 class="titre">USTC-LODJA</h2>
+                        <P class="description">Bienvenue à l'Université des Sciences et de Technologies de Lodja </p>
                         <img src="../img-universite/logo-ukv (1).jpg" alt="">
                     </div>
 
@@ -398,24 +410,18 @@
 
             <div class="container-prive">
                 <div class="section-titre">PRIVE</div>
-                <div class="sud-kivus-prive">
-                    <div class="sud-kivu-prive-liste">
-                        <div class="sud-kivu-prive-contenu">
+                <div class="sankurus-prive">
+                    <div class="sankuru-prive-liste">
+                        <div class="sankuru-prive-contenu">
                             <h2 class="titre">FUB</h2>
                             <P class="description">Bienvenue à Faculte universitaire de Bambelota </P>
                             <img src="../img-universite/logo-ukv (1).jpg" alt="">
                         </div>
                     </div>
 
-                    <div class="sud-kivu-prive-contenu">
+                    <div class="sankuru-prive-contenu">
                         <h2 class="titre">UNIKIS</h2>
                         <P class="description">Bienvenue à l'Université de Kisangani</P>
-                        <img src="../img-universite/logo-ukv (1).jpg" alt="">
-                    </div>
-
-                    <div class="sud-kivu-prive-contenu">
-                        <h2 class="titre">UOY</h2>
-                        <P class="description">Bienvenue à l'Université Officielle Yabaonda</P>
                         <img src="../img-universite/logo-ukv (1).jpg" alt="">
                     </div>
 
@@ -428,6 +434,13 @@
         </div>
 
     </section>
+
+    <div style="text-align:center; margin: 30px 0;">
+        <button onclick="window.history.back();"
+            style="padding:10px 30px; font-size:1.1rem; background:var(--bg3); color:var(--bg); border:none; border-radius:8px; cursor:pointer;">
+            &#8592; Retour
+        </button>
+    </div>
 
     <footer>
         <div class="container-footer">
@@ -452,8 +465,8 @@
         </div>
     </footer>
 
-    <body>
 
-    </body>
+
+</body>
 
 </html>
