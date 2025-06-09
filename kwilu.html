@@ -241,44 +241,15 @@
             margin-top: 20px;
         }
 
-        .kwilu-prive-contenu {
-            background: var(--link);
-            border: 1px solid var(--bg2);
-            border-radius: 12px;
-            padding: 20px;
-            width: 260px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.2s;
-        }
-
-        .kwilu-prive-contenu:hover {
-            transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
-        }
-
-        .kwilu-prive-contenu img {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-            margin: 12px 0;
-        }
 
 
-        .kwilu-prive-contenu .description {
-            font-size: 1rem;
+        .kwilu-prive-description {
+            font-size: 2rem;
             color: var(black);
             margin-bottom: 8px;
         }
 
-        .kwilu-prive-contenu .titre {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: var(--orange);
-            margin-bottom: 8px;
-        }
+
 
         /* Footer principal */
         footer {
@@ -417,26 +388,10 @@
             <div class="container-prive">
                 <div class="section-titre">PRIVE</div>
                 <div class="kwilus-prive">
-                    <div class="kwilu-prive-liste">
-                        <div class="kwilu-prive-contenu">
-                            <h2 class="titre">UNIBAND</h2>
-                            <P class="description">Bienvenue à l'Université de Bandundu </P>
-                            <img src="../img-universite/logo-ukv (1).jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="kwilu-prive-contenu">
-                        <h2 class="titre">UNIDJU</h2>
-                        <P class="description">Bienvenue à l'Université de Djuma </P>
-                        <img src="../img-universite/logo-ukv (1).jpg" alt="">
-                    </div>
-
-                    <div class="kwilu-prive-contenu">
-                        <h2 class="titre">UNIKIK</h2>
-                        <P class="description">Bienvenue à l'Université de Kikwit </P>
-                        <img src="../img-universite/logo-unikik.jpg" alt="">
-                    </div>
-
-
+                    <p class="kwilu-prive-description">Malheureusement la province de kwilu ne possède pas des
+                        universités
+                        privées.
+                    </p>
                 </div>
             </div>
         </div>
@@ -444,15 +399,15 @@
         </div>
         </div>
         </div>
-
+        <div style="text-align:center; margin: 20px 0;">
+            <button onclick="window.history.back();"
+                style="padding:10px 30px; font-size:1.1rem; background:var(--bg3); color:var(--bg); border:none; border-radius:8px; cursor:pointer;">
+                &#8592; Retour
+            </button>
+        </div>
     </section>
 
-    <div style="text-align:center; margin: 30px 0;">
-        <button onclick="window.history.back();"
-            style="padding:10px 30px; font-size:1.1rem; background:var(--bg3); color:var(--bg); border:none; border-radius:8px; cursor:pointer;">
-            &#8592; Retour
-        </button>
-    </div>
+
 
     <footer>
         <div class="container-footer">
