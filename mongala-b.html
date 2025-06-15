@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="../logo/logo-runico2.png">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<title>NORD-UBANGI</title>
+<title>MONGALA</title>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
@@ -55,7 +55,6 @@
         justify-content: space-between;
 
     }
-
 
 
     nav button {
@@ -123,20 +122,19 @@
         box-shadow: 0 0 15px var(--link)
     }
 
-
     .section-titre {
         margin-bottom: 3rem;
         text-align: center;
         font-size: 3rem;
     }
 
-    .nord-ubangi {
+    .mongala {
         position: relative;
         justify-content: center;
         align-items: center;
     }
 
-    .nord-ubangi h1 {
+    .mongala h1 {
         font-size: 3.4rem;
         font-weight: 600;
         line-height: 1.3;
@@ -144,12 +142,12 @@
         margin: 20px 0;
     }
 
-    .nord-ubangi-content {
+    .mongala-content {
         text-align: center;
         font-size: 30px;
     }
 
-    .nord-ubangis {
+    .mongalas {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
@@ -157,7 +155,7 @@
         margin-top: 20px;
     }
 
-    .nord-ubangi-contenu {
+    .mongala-contenu {
         background: var(--link);
         border: 1px solid var(--bg2);
         border-radius: 12px;
@@ -170,31 +168,39 @@
         transition: transform 0.2s;
     }
 
-    .nord-ubangi-contenu:hover {
+    .mongala-contenu:hover {
         transform: translateY(-8px) scale(1.03);
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
     }
 
-    .nord-ubangi-contenu .description {
-        font-size: 1.6rem;
+    .mongala-contenu img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin: 12px 0;
+    }
+
+
+    .mongala-contenu .description {
+        font-size: 1rem;
         color: var(black);
         margin-bottom: 8px;
     }
 
-    .nord-ubangi-contenu .titre {
-        font-size: 2rem;
+    .mongala-contenu .titre {
+        font-size: 1.5rem;
         font-weight: 500;
         color: var(--orange);
         margin-bottom: 8px;
     }
 
-    .nord-ubangi-prive {
+    .mongala-prive {
         position: relative;
         justify-content: center;
         align-items: center;
     }
 
-    .nord-ubangi-prive h1 {
+    .mongala-prive h1 {
         font-size: 3.4rem;
         font-weight: 600;
         line-height: 1.3;
@@ -202,12 +208,12 @@
         margin: 20px 0;
     }
 
-    .nord-ubangi-prive-content {
+    .mongala-prive-content {
         text-align: center;
         font-size: 30px;
     }
 
-    .nord-ubangis-prive {
+    .mongalas-prive {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
@@ -215,15 +221,44 @@
         margin-top: 20px;
     }
 
+    .mongala-prive-contenu {
+        background: var(--link);
+        border: 1px solid var(--bg2);
+        border-radius: 12px;
+        padding: 20px;
+        width: 260px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s;
+    }
+
+    .mongala-prive-contenu:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
+    }
+
+    .mongala-prive-contenu img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin: 12px 0;
+    }
 
 
-    .nord-ubangi-prive-description {
-        font-size: 2rem;
+    .mongala-prive-contenu .description {
+        font-size: 1rem;
         color: var(black);
         margin-bottom: 8px;
     }
 
-
+    .mongala-prive-contenu .titre {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--orange);
+        margin-bottom: 8px;
+    }
 
     /* Footer principal */
     footer {
@@ -322,25 +357,33 @@
             <a href="index.html">Accueil</a>
             <a href="universite.html">Université</a>
             <a href="institut.html">Institut</a>
+            <a href="ecole-sup.html">Ecole Supérieure</a>
             <a href="a-propos.html">A propos</a>
         </nav>
     </header>
 
-    <section id="nord-uabngi" class="nord-ubangi">
-        <div class="nord-ubangi-content">
-            <h1><span>NORD-UBANGI</span></h1>
-            <p>Bienvenue dans la province de <span>Nord-Ubangi</span> est nous vous présentons les universités
-                qui s'y
-                trouvent.</p>
+    <section id="mongala" class="mongala">
+        <div class="mongala-content">
+            <h1><span>MONGALA</span></h1>
+            <p>Bienvenue dans la province de <span>Mongala</span> est nous vous présentons les instituts
+                qui si
+                trouve.</p>
 
             <div class="container">
                 <div class="section-titre">PUBLIC</div>
-                <div class="nord-ubangis">
-                    <div class="nord-ubangi-liste">
-                        <div class="nord-ubangi-contenu">
-                            <h2 class="titre">UNIGBA</h2>
-                            <P class="description">Bienvenue à l'Université de Gbadolite</P>
+                <div class="mongalas">
+                    <div class="mongala-liste">
+                        <div class="mongala-contenu">
+                            <h2 class="titre">ISP-BUMBA</h2>
+                            <P class="description">Bienvenue à l'Institut Supérieur Pédagogique de Bumba</P>
+                            <img src="../img-universite/logo-isp-bumba.jpeg" alt="">
                         </div>
+                    </div>
+
+                    <div class="mongala-contenu">
+                        <h2 class="titre">ISP-MONGALA</h2>
+                        <P class="description">Bienvenue à l'Institut Supérieur Pédagogique de Mongala</P>
+                        <img src="../img-universite/logo-isp-mongala.jpeg" alt="">
                     </div>
 
                 </div>
@@ -348,10 +391,10 @@
 
             <div class="container-prive">
                 <div class="section-titre">PRIVE</div>
-                <div class="nord-ubangis-prive">
+                <div class="mongalas-prive">
 
-                    <P class="nord-ubangi-prive-description">Malheureusement, nous n'avons pas d'informations sur les
-                        universités privés dans la province de Nord-Ubangi.
+                    <P class="mongala-prive-description">Malheureusement, nous n'avons pas d'informations sur les
+                        instituts privés dans la province de Mongala.
                         Si vous avez des informations à ce sujet, n'hésitez pas à nous contacter pour que nous puissions
                         les ajouter.</P>
 
@@ -385,6 +428,7 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="universite.html">Université</a></li>
                     <li><a href="institut.html">Institut</a></li>
+                    <li><a href="ecole-sup.html">Ecole Supérieure</a></li>
                     <li><a href="a-propos.html">A propos</a></li>
                 </ul>
 
