@@ -6,297 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../logo/logo-runico2.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/etablissement.css">
     <title>Institut</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Bodoni';
-            outline: none;
-            text-decoration: none;
-            list-style: none;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        :root {
-            --orange: #FF8303;
-            --bg: #f0ece3;
-            --bg2: #4C2207;
-            --bg3: #Cc5500;
-            --bg4: #9B430E;
-            --light: #ffffff;
-            --link: #f5c89c;
-        }
-
-        section {
-            padding: 4rem 3% 1rem;
-            min-height: 100vh;
-        }
-
-        span {
-            color: var(--bg3);
-        }
-
-        body {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            background: var(--bg);
-        }
-
-        header {
-            background: var(--bg2);
-            padding: 10px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-        }
-
-        nav button {
-            margin-left: 10px;
-
-        }
-
-        nav a {
-            color: var(--light);
-            font-size: 1.2rem;
-            margin-left: 2rem;
-            transition: .2 ease-in-out;
-            position: relative;
-        }
-
-        nav a::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            display: block;
-            width: 0%;
-            height: 1px;
-            background: var(--orange);
-            transition: width .2s ease-in-out;
-        }
-
-        nav a:hover {
-            color: var(--orange);
-        }
-
-        .logo {
-            font-size: 2.5rem;
-            color: var(--orange);
-            font-weight: 800;
-        }
-
-        #menu-burger {
-            font-size: 3.6rem;
-            cursor: pointer;
-            color: var(--light);
-            display: none;
-        }
-
-
-        .institut {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .institut-content {
-            display: relative;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .section-title {
-            font-size: 3rem;
-            color: black;
-            font-weight: 800;
-            margin-bottom: 2rem;
-        }
-
-        .institut-content p {
-            margin: 50px 1%;
-            font-size: 1.9rem;
-        }
-
-
-        .institut-content a {
-            text-decoration: none;
-            color: var(--link);
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        .institut-content-a {
-            margin: 3rem 0;
-            padding: 3rem 0;
-        }
-
-
-        .institut-carousel-horizontal {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            max-width: 100%;
-            margin: 20px 0;
-            justify-content: center;
-        }
-
-        .carousel-track-horizontal {
-            display: flex;
-            flex-direction: row;
-            overflow-x: hidden;
-            gap: 10px;
-            max-width: 600px;
-            min-height: 50px;
-            padding: 10px 0;
-            scroll-behavior: smooth;
-        }
-
-        .carousel-track-horizontal button {
-            min-width: 120px;
-            padding: 10px 20px;
-            border-radius: 20px;
-            border: 1px solid var(--bg3);
-            background: var(--light);
-            color: var(--bg3);
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s, color 0.2s;
-        }
-
-        .carousel-track-horizontal button a {
-            color: var(--bg3);
-            text-decoration: none;
-        }
-
-        .carousel-track-horizontal button:hover,
-        .carousel-track-horizontal button:focus {
-            background: var(--bg3);
-            color: var(--light);
-            box-shadow: 0 0 1rem var(--bg3);
-        }
-
-        .carousel-track-horizontal button:hover a,
-        .carousel-track-horizontal button:focus a {
-            color: var(--light);
-        }
-
-        .carousel-arrow-horizontal {
-            background: var(--bg3);
-            color: var(--light);
-            border: none;
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .carousel-arrow-horizontal:active {
-            background: var(--orange);
-        }
-
-        /* Footer principal */
-        footer {
-            background: var(--bg2);
-            color: var(--light);
-            padding: 40px 0 0 0;
-            margin-top: 40px;
-            font-size: 1.3rem;
-        }
-
-        footer .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 5%;
-            gap: 10px;
-        }
-
-        .footer-content1,
-        .footer-content2,
-        .footer-content3 {
-            flex: 1 1 300px;
-            margin-bottom: 30px;
-            min-width: 200px;
-        }
-
-        .footer-content1 h3,
-        .footer-content2 h3,
-        .footer-content3 h3 {
-            color: var(--orange);
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        .footer-content1 p,
-        .footer-content3 p {
-            margin-bottom: 10px;
-        }
-
-
-        .footer-content2 ul.liste {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-content2 ul.liste li {
-            margin-bottom: 8px;
-        }
-
-        .footer-content2 ul.liste li a {
-            color: var(--light);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer-content2 ul.liste li a:hover {
-            color: var(--orange);
-            text-decoration: underline;
-        }
-
-        .footer-txt {
-            background: var(--bg3);
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
-            font-size: 1rem;
-            letter-spacing: 1px;
-        }
-
-        /* Responsive */
-        @media (max-width: 800px) {
-            footer .container {
-                flex-direction: column;
-                align-items: center;
-                padding: 0 2%;
-            }
-
-            .footer-content1,
-            .footer-content2,
-            .footer-content3 {
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-content2 ul.liste {
-                display: inline-block;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -312,16 +24,16 @@
             <a href="a-propos.html">A propos</a>
         </nav>
     </header>
-    <section id="institut" class="institut">
-        <div class="institut-content">
+    <section id="etablissement" class="etablissement">
+        <div class="etablissement-content">
             <h1 class="section-title">Choisissez votre <span>Institut</span></h1>
             <p>Bienvenue sur la page Institut, ici nous vous offrons la possibilité de choisir l'institut qui vous
                 convient le mieux en fonction de
                 province présentes.
 
-            <div class="institut-content-a">
+            <div class="etablissement-content-a">
                 <h2 class="section-title">Alors faites votre <span>Choix</span></h2>
-                <div class="institut-carousel-horizontal">
+                <div class="etablissement-carousel-horizontal">
                     <button class="carousel-arrow-horizontal" id="leftBtn1"><i class='bx bx-chevron-left'></i></button>
                     <div class="carousel-track-horizontal" id="carouselTrack1">
                         <button>
@@ -385,21 +97,7 @@
         </div>
     </footer>
 
-    <script>
-
-        // Carrousel 1
-        (function () {
-            const track = document.getElementById('carouselTrack1');
-            document.getElementById('leftBtn1').onclick = () => {
-                track.scrollBy({ left: -250, behavior: 'smooth' });
-            };
-            document.getElementById('rightBtn1').onclick = () => {
-                track.scrollBy({ left: 250, behavior: 'smooth' });
-            };
-        })();
-
-
-    </script>
+    <script src="../javascript/etablissement.js"></script>
 
 </body>
 

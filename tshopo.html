@@ -6,373 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../logo/logo-runico2.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/provinceb.css">
     <title>TSHOPO</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Bodoni';
-            outline: none;
-            text-decoration: none;
-            list-style: none;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        :root {
-            --orange: #FF8303;
-            --bg: #f0ece3;
-            --bg2: #4C2207;
-            --bg3: #Cc5500;
-            --bg4: #9B430E;
-            --light: #f1f1f1;
-            --link: #f5c89c;
-        }
-
-        section {
-            padding: 4rem 3% 1rem;
-            min-height: 100vh;
-        }
-
-        span {
-            color: var(--bg3);
-        }
-
-        body {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, var(--light) 0%, var(--link) 100%);
-        }
-
-        header {
-            background: var(--bg2);
-            padding: 10px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-        }
-
-
-
-        nav button {
-            margin-left: 30px;
-
-        }
-
-        nav a {
-            color: var(--light);
-            font-size: 1.2rem;
-            margin-left: 2rem;
-            transition: .2 ease-in-out;
-            position: relative;
-        }
-
-        nav a::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            display: block;
-            width: 0%;
-            height: 1px;
-            background: var(--orange);
-            transition: width .2s ease-in-out;
-        }
-
-        nav a:hover {
-            color: var(--orange);
-        }
-
-        .logo {
-            font-size: 2.5rem;
-            color: var(--orange);
-            font-weight: 800;
-        }
-
-        #menu-burger {
-            font-size: 3.6rem;
-            cursor: pointer;
-            color: var(--light);
-            display: none;
-        }
-
-
-
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 30px 25px;
-            background: #fff;
-            border: 1px solid var(--orange);
-            border-radius: 18px;
-            box-shadow: 0 0 15px var(--link)
-        }
-
-        .container-prive {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 30px 25px;
-            background: #fff;
-            border: 1px solid var(--orange);
-            border-radius: 18px;
-            box-shadow: 0 0 15px var(--link)
-        }
-
-        .section-titre {
-            margin-bottom: 3rem;
-            text-align: center;
-            font-size: 3rem;
-        }
-
-        .tshopo {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tshopo h1 {
-            font-size: 3.4rem;
-            font-weight: 600;
-            line-height: 1.3;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .tshopo-content {
-            text-align: center;
-            font-size: 30px;
-        }
-
-        .tshopos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 24px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .tshopo-contenu {
-            background: var(--link);
-            border: 1px solid var(--bg2);
-            border-radius: 12px;
-            padding: 20px;
-            width: 260px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.2s;
-        }
-
-        .tshopo-contenu:hover {
-            transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
-        }
-
-        .tshopo-contenu img {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-            margin: 12px 0;
-        }
-
-
-        .tshopo-contenu .description {
-            font-size: 1rem;
-            color: var(black);
-            margin-bottom: 8px;
-        }
-
-        .tshopo-contenu .titre {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: var(--orange);
-            margin-bottom: 8px;
-        }
-
-        .tshopo-contenu a {
-            text-decoration: none;
-            color: var(--orange);
-            font-weight: 400;
-            margin-top: 10px;
-            padding: 8px 16px;
-        }
-
-        .tshopo-contenu a:hover {
-            text-decoration: underline;
-            color: var(--orange);
-        }
-
-        .tshopo-prive {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tshopo-prive h1 {
-            font-size: 3.4rem;
-            font-weight: 600;
-            line-height: 1.3;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .tshopo-prive-content {
-            text-align: center;
-            font-size: 30px;
-        }
-
-        .tshopos-prive {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 24px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .tshopo-prive-contenu {
-            background: var(--link);
-            border: 1px solid var(--bg2);
-            border-radius: 12px;
-            padding: 20px;
-            width: 260px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.2s;
-        }
-
-        .tshopo-prive-contenu:hover {
-            transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
-        }
-
-        .tshopo-prive-contenu img {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-            margin: 12px 0;
-        }
-
-
-        .tshopo-prive-contenu .description {
-            font-size: 1rem;
-            color: var(black);
-            margin-bottom: 8px;
-        }
-
-        .tshopo-prive-contenu .titre {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: var(--orange);
-            margin-bottom: 8px;
-        }
-
-        .tshopo-prive-contenu a {
-            text-decoration: none;
-            color: var(--orange);
-            font-weight: 400;
-            margin-top: 10px;
-            padding: 8px 16px;
-        }
-
-        .tshopo-prive-contenu a:hover {
-            text-decoration: underline;
-            color: var(--orange);
-        }
-
-        /* Footer principal */
-        footer {
-            background: var(--bg2);
-            color: var(--light);
-            padding: 40px 0 0 0;
-            margin-top: 40px;
-            font-size: 1.3rem;
-        }
-
-        footer .container-footer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 5%;
-        }
-
-        .footer-content1,
-        .footer-content2 {
-            flex: 1 1 300px;
-            margin-bottom: 30px;
-        }
-
-        .footer-content1 h3,
-        .footer-content2 h3 {
-            color: var(--orange);
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        .footer-content1 p {
-            margin-bottom: 10px;
-        }
-
-
-
-        .footer-content2 ul.liste {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-content2 ul.liste li {
-            margin-bottom: 8px;
-        }
-
-        .footer-content2 ul.liste li a {
-            color: var(--light);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer-content2 ul.liste li a:hover {
-            color: var(--orange);
-            text-decoration: underline;
-        }
-
-        .footer-txt {
-            background: var(--bg3);
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
-            font-size: 1rem;
-            letter-spacing: 1px;
-        }
-
-        /* Responsive */
-        @media (max-width: 800px) {
-            footer .container {
-                flex-direction: column;
-                align-items: center;
-                padding: 0 2%;
-            }
-
-            .footer-content1,
-            .footer-content2 {
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-content2 ul.liste {
-                display: inline-block;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -389,17 +25,17 @@
         </nav>
     </header>
 
-    <section id="tshopo" class="tshopo">
-        <div class="tshopo-content">
+    <section id="provinceb" class="provinceb">
+        <div class="provinceb-content">
             <h1><span>TSHOPO</span></h1>
             <p>Bienvenue dans la province de <span>Tshopo</span> est nous vous présentons les universités
                 qui s'y trouvent.</p>
 
             <div class="container">
                 <div class="section-titre">PUBLIC</div>
-                <div class="tshopos">
-                    <div class="tshopo-liste">
-                        <div class="tshopo-contenu">
+                <div class="provincebs">
+                    <div class="provinceb-liste">
+                        <div class="provinceb-contenu">
                             <h2 class="titre">UNIKIS</h2>
                             <P class="description">Bienvenue à l'Université de Kisangani</P>
                             <img src="../img-universite/logo-unikis.jpg" alt="">
@@ -412,9 +48,9 @@
 
             <div class="container-prive">
                 <div class="section-titre">PRIVE</div>
-                <div class="tshopos-prive">
-                    <div class="tshopo-prive-liste">
-                        <div class="tshopo-prive-contenu">
+                <div class="provincebs-prive">
+                    <div class="provinceb-prive-liste">
+                        <div class="provinceb-prive-contenu">
                             <h2 class="titre">UNILAC</h2>
                             <P class="description">Bienvenue à l'Univesité du Lac Albert de Mahagi</P>
                             <img src="../img-universite/logo-unilac.png" alt="">
@@ -422,20 +58,19 @@
                         </div>
                     </div>
 
-                    <div class="tshopo-prive-contenu">
+                    <div class="provinceb-prive-contenu">
                         <h2 class="titre">UMC</h2>
                         <P class="description">Bienvenue à l'Univesité Mariste du Congo</P>
                         <img src="../img-universite/logo-umc.jpg" alt="">
                         <a href="umc.html">Voir plus</a>
                     </div>
 
-                    <div class="tshopo-prive-contenu">
+                    <div class="provinceb-prive-contenu">
                         <h2 class="titre">ULK</h2>
                         <P class="description">Bienvenue à l'Univesité Libre de Kisangani</P>
                         <img src="../img-universite/logo-ulk.jpg" alt="">
                         <a href="ulkb.html">Voir plus</a>
                     </div>
-
 
                 </div>
             </div>
@@ -469,7 +104,11 @@
                     <li><a href="institut.html">Institut</a></li>
                     <li><a href="a-propos.html">A propos</a></li>
                 </ul>
-
+            </div>
+            <div class="footer-content3">
+                <h3>Contact</h3>
+                <P>Email: info@runeco.com</P>
+                <p>Téléphone: +243 843630372</p>
             </div>
         </div>
         <div class="footer-txt">
